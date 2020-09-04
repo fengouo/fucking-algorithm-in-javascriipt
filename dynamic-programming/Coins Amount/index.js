@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-08-27 10:13:16
- * @LastEditTime: 2020-08-27 11:25:18
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-08-27 18:19:29
+ * @LastEditors: feng
  * @Description: In User Settings Edit
  * @FilePath: /dynamic-programming/index.js
  */
@@ -19,8 +19,6 @@ function coinChange(coins, amount) {
         // Initalize the result the max int value
         let result = Number.MAX_VALUE;
         for(var coin of coins) {
-            console.log('coins is', coins);
-            console.log("coin is", coin);
             let sub = dp(n - coin);
             if (sub == -1) {
                 continue;
